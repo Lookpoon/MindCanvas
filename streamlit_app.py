@@ -56,7 +56,7 @@ else:
 
         # Generate an emotion prediction using the GPT API
         with st.spinner("Analyzing emotion..."):
-            response = openai.Completion.create(
+            response = openai.ChatCompletion.create(
                 engine="text-davinci-003",
                 prompt=prompt,
                 max_tokens=10,
